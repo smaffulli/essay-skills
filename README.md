@@ -1,26 +1,21 @@
 # Essay Skills for AI Agents
 
-Professional essay writing and editing skills for Claude Code and other AI agents.
+A professional essay writing pipeline for Claude Code and other AI agents. Six skills that take you from scattered notes to polished prose.
 
-## Skills Included
+## The Pipeline
 
-### `/essay` — Professional Essay Writer
-Transform raw ideas, scattered notes, and half-formed thoughts into intellectually rigorous prose. Features a mandatory 6-phase question flow to understand your intent before writing.
+```
+Notes → Brief → Outline → Draft → Revise → Review → Polish
+```
 
-**What it handles:**
-- Jumbled notes and bullet points
-- Stream-of-consciousness thoughts
-- Partial drafts or fragments
-- Voice memo transcripts
-- Research dumps with no thesis
-
-### `/essay-edit` — Essay Section Editor
-Edit individual sections of an essay while maintaining voice cohesion. Surgical revisions that preserve the established style.
-
-**Edit types supported:**
-- Tighten, Expand, Reframe, Sharpen
-- Restructure, Tone shift, Bridge
-- Kill darlings
+| Skill | What it does |
+|-------|--------------|
+| `/essay-brief` | Extract the DNA through a question flow → saves `essay-brief.md` |
+| `/essay-outline` | Create the structural skeleton → saves `essay-outline.md` |
+| `/essay-draft` | Write the full first draft using brief + outline |
+| `/essay-revise` | Surgical edits to specific sections |
+| `/essay-review` | Tough editor diagnostic (structure, argument, voice) |
+| `/essay-polish` | Final rhythm, word choice, and honest assessment |
 
 ## Installation
 
@@ -34,9 +29,69 @@ npx skills add clyderankin/essay-skills
 curl -fsSL https://raw.githubusercontent.com/clyderankin/essay-skills/main/install.sh | bash
 ```
 
+## Usage
+
+### Full Pipeline (Recommended)
+
+**Step 1: Capture the DNA**
+```
+/essay-brief
+
+[paste your notes, ideas, fragments]
+```
+→ Answer the questions → Get `essay-brief.md`
+
+**Step 2: Structure it**
+```
+/essay-outline
+
+[paste or reference your essay-brief.md]
+```
+→ Approve the skeleton → Get `essay-outline.md`
+
+**Step 3: Write it**
+```
+/essay-draft
+
+[reference your brief and outline]
+```
+→ Get the full first draft
+
+**Step 4: Revise sections**
+```
+/essay-revise
+
+Section: "Your paragraph here..."
+Notes: "Make it punchier" or "This feels off"
+```
+→ Get surgical edits that respect the brief
+
+**Step 5: Get tough feedback**
+```
+/essay-review
+
+[paste or reference your draft]
+```
+→ Get an honest editorial diagnostic
+
+**Step 6: Final polish**
+```
+/essay-polish
+
+[paste or reference your reviewed draft]
+```
+→ Get the polished final version + honest assessment
+
+### Quick Mode
+
+Don't need the full pipeline? You can:
+- Skip `/essay-outline` and go straight from brief to draft
+- Jump to `/essay-revise` if you already have a draft
+- Use `/essay-review` on any draft, even without a brief (less precise feedback)
+
 ## Voice Principles
 
-Both skills follow consistent voice principles:
+All skills follow consistent voice principles:
 
 - **Philosophical yet Accessible** — Authority from perspective, not credentials
 - **Intellectual Honesty** — Refuse easy positions; treat complexity as terrain
@@ -45,23 +100,17 @@ Both skills follow consistent voice principles:
 - **No Mechanical Transitions** — Thematic flow over signposting
 - **Productive Discomfort** — Preserve complexity; don't resolve too cleanly
 
-## Usage
+## The Files
 
-**Writing a new essay:**
-```
-/essay
+The pipeline creates artifacts you can save and reference:
 
-[paste your notes, ideas, or fragments]
-```
+| File | Created by | Used by |
+|------|------------|---------|
+| `essay-brief.md` | `/essay-brief` | All downstream skills |
+| `essay-outline.md` | `/essay-outline` | `/essay-draft` |
+| `essay-draft.md` | `/essay-draft` | `/essay-revise`, `/essay-review` |
 
-**Editing a section:**
-```
-/essay-edit
-
-Section: "Your existing paragraph here..."
-
-Notes: "Make it punchier" or "This feels off" or "Needs one more beat"
-```
+The brief is the source of truth. Every skill checks against it to maintain consistency.
 
 ## License
 
