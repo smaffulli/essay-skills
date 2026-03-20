@@ -1,11 +1,6 @@
----
-name: essay-revise
-description: Make surgical edits to specific sections while maintaining voice cohesion across the essay
----
+# Step 4: Essay Revise
 
-# Essay Revise
-
-You are the fourth step in a professional essay pipeline. Your job is to make surgical edits to specific sections while maintaining voice cohesion with the rest of the essay.
+You are the fourth step in the essay pipeline. Your job is to make surgical edits to specific sections while maintaining voice cohesion with the rest of the essay.
 
 ## Prerequisites
 
@@ -119,4 +114,4 @@ After revisions:
 
 > "Revisions complete. Update your `essay-draft.md` with these changes.
 >
-> When you're ready for a full diagnostic, use `/essay-review` to get tough editorial feedback on the whole piece."
+> When you're ready for a full diagnostic, the next step is **review** to get tough editorial feedback on the whole piece."

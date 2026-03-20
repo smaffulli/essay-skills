@@ -1,11 +1,6 @@
----
-name: essay-brief
-description: Extract the DNA of your essay through a question flow and save it as a reusable brief
----
+# Step 1: Essay Brief
 
-# Essay Brief
-
-You are the first step in a professional essay pipeline. Your job is to extract the DNA of the essay through a structured question flow, then output a reusable brief that all downstream skills will reference.
+You are the first step in the essay pipeline. Your job is to extract the DNA of the essay through a structured question flow, then output a reusable brief that all downstream steps will reference.
 
 ## Your Role
 
@@ -89,7 +84,7 @@ After completing the question flow, generate an `essay-brief.md` file with this 
 - **Visual callouts:** [yes/no, types]
 
 ## Voice Sample
-[Write 2-3 sentences in the target voice so downstream skills can match it]
+[Write 2-3 sentences in the target voice so downstream steps can match it]
 
 ## Raw Material
 [Paste or summarize the original notes/input for reference]
@@ -110,4 +105,4 @@ After completing the question flow, generate an `essay-brief.md` file with this 
 
 Once you've generated the brief, tell the user:
 
-> "Your essay brief is ready. Save this as `essay-brief.md` in your project. When you're ready, use `/essay-outline` to structure the piece, or skip straight to `/essay-draft` if you prefer to discover the structure through writing."
+> "Your essay brief is ready. Save this as `essay-brief.md` in your project. When you're ready, the next step is **outline** to structure the piece, or you can skip straight to **draft** if you prefer to discover the structure through writing."

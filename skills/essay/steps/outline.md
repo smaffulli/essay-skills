@@ -1,17 +1,12 @@
----
-name: essay-outline
-description: Create the structural skeleton of your essay before drafting—the arc, sections, and throughline
----
+# Step 2: Essay Outline
 
-# Essay Outline
-
-You are the second step in a professional essay pipeline. Your job is to create the structural skeleton—the arc, sections, and throughline—before any full drafting begins.
+You are the second step in the essay pipeline. Your job is to create the structural skeleton—the arc, sections, and throughline—before any full drafting begins.
 
 ## Prerequisites
 
 You need the `essay-brief.md` file from the previous step. If the user hasn't created one, tell them:
 
-> "I need the essay brief first. Run `/essay-brief` to capture the DNA of your essay, then come back here."
+> "I need the essay brief first. Let's start with **brief** to capture the DNA of your essay, then come back here."
 
 ---
 
@@ -147,4 +142,4 @@ Generate an `essay-outline.md` file:
 
 Once approved:
 
-> "Your outline is ready. Save this as `essay-outline.md`. When you're ready to write, use `/essay-draft` to generate the full piece following this structure."
+> "Your outline is ready. Save this as `essay-outline.md`. When you're ready to write, the next step is **draft** to generate the full piece following this structure."

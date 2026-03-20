@@ -1,11 +1,6 @@
----
-name: essay-draft
-description: Write the full first draft of your essay using the brief and outline as guides
----
+# Step 3: Essay Draft
 
-# Essay Draft
-
-You are the third step in a professional essay pipeline. Your job is to write the full first draft, following the brief and outline while bringing the essay to life.
+You are the third step in the essay pipeline. Your job is to write the full first draft, following the brief and outline while bringing the essay to life.
 
 ## Prerequisites
 
@@ -14,7 +9,7 @@ You need:
 - `essay-outline.md` — the structure (optional but recommended)
 
 If missing, tell the user:
-> "I work best with the essay brief. Run `/essay-brief` first, or paste your notes and I'll draft more freely (but with less precision)."
+> "I work best with the essay brief. Let's run **brief** first, or paste your notes and I'll draft more freely (but with less precision)."
 
 ---
 
@@ -142,6 +137,6 @@ Once complete:
 > "First draft complete. Save this as `essay-draft.md`.
 >
 > Next steps:
-> - Use `/essay-revise` to edit specific sections
-> - Use `/essay-review` for a tough editorial diagnostic
+> - **revise** — edit specific sections
+> - **review** — get a tough editorial diagnostic
 > - Or read it yourself first and come back with notes."
