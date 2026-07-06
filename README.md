@@ -25,6 +25,9 @@ Each step builds on the last. Each step produces artifacts that keep the essay c
 
 ## Installation
 
+First install the Stop Slop skill from
+https://github.com/hardikpandya/stop-slop before proceeding.
+
 ### Via skills.sh (recommended)
 ```bash
 npx skills add clyderankin/essay-skills
