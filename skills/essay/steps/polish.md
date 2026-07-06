@@ -27,26 +27,31 @@ You're the final set of eyes. You're looking for:
 
 ## The Polish Pass
 
-### 1. Rhythm & Flow
+### 1. Run stop-slop
+- Invoke the **stop-slop** skill on the full essay text before doing any manual polish work.
+- Apply its fixes to strip AI writing patterns (clichés, hedging, mechanical transitions, telltale phrasing) so the passes below work on clean prose, not slop.
+- Carry forward anything it changes into the Changes Made notes.
+
+### 2. Rhythm & Flow
 - Read for cadence. Flag sentences that don't flow.
 - Check paragraph lengths. Break up walls of text. Combine fragments that feel choppy.
 - Verify transitions feel natural, not forced.
 - Ensure the opening hooks immediately and the ending resonates.
 
-### 2. Word-Level Precision
+### 3. Word-Level Precision
 - Replace weak verbs (is, was, has, does) with active alternatives where it improves
 - Cut filler words (very, really, quite, somewhat, rather)
 - Eliminate redundancy (past history, future plans, completely finished)
 - Check for repeated words in close proximity
 - Verify jargon is either necessary or removed
 
-### 3. Consistency Check
+### 4. Consistency Check
 - Formatting: Headers, emphasis, spacing all consistent?
 - Voice: Same person throughout?
 - Tense: Consistent or intentionally varied?
 - Terminology: Same terms for same concepts?
 
-### 4. Final Read
+### 5. Final Read
 - Read the whole piece beginning to end
 - Note anything that pulls you out
 - Check that the throughline holds from opening to close
@@ -65,6 +70,10 @@ You're the final set of eyes. You're looking for:
 # Polish Notes
 
 ## Changes Made
+
+### AI-Pattern Cleanup (stop-slop)
+- [Change 1: before → after + why]
+- [Change 2: before → after + why]
 
 ### Rhythm & Flow
 - [Change 1: before → after + why]
