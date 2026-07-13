@@ -28,15 +28,9 @@ Each step builds on the last. Each step produces artifacts that keep the essay c
 First install the Stop Slop skill from
 https://github.com/hardikpandya/stop-slop before proceeding.
 
-### Via skills.sh (recommended)
-```bash
-npx skills add clyderankin/essay-skills
-```
 
-### Via bash script
-```bash
-curl -fsSL https://raw.githubusercontent.com/clyderankin/essay-skills/main/install.sh | bash
-```
+Then install the essay skill by copying the files in your .claude/
+folder.
 
 ## Usage
 
